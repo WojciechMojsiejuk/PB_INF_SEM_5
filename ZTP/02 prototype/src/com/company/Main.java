@@ -40,11 +40,13 @@ class Database extends AbstractTableModel {
 interface TableData extends Cloneable {
     final static Random rnd = new Random();
     abstract public TableData clone();
+    abstract public void losuj();
 }
 
 class TableDataInt implements TableData, Cloneable
 {
     private int data;
+    public void losuj() { data = rnd.nextInt(100); }
     public TableDataInt() { data = rnd.nextInt(100); }
     public String toString() { return Integer.toString(data); }
     public TableDataInt clone() {
@@ -57,6 +59,7 @@ class TableDataInt implements TableData, Cloneable
 
 class TableDataDouble implements TableData, Cloneable {
     private double data;
+    public void losuj() { data = rnd.nextDouble(); }
     public TableDataDouble() { data = rnd.nextDouble(); }
     public String toString() { return Double.toString(data); }
     public TableDataDouble clone() {
@@ -69,6 +72,7 @@ class TableDataDouble implements TableData, Cloneable {
 
 class TableDataChar implements TableData, Cloneable {
     private char data;
+    public void losuj() { data = (char) (97 + rnd.nextInt(25)); }
     public TableDataChar() { data = (char) (97 + rnd.nextInt(25)); }
     public String toString() { return Character.toString(data); }
     public TableDataChar clone() {
@@ -81,6 +85,7 @@ class TableDataChar implements TableData, Cloneable {
 
 class TableDataBoolean implements TableData, Cloneable {
     private boolean data;
+    public void losuj() { data = rnd.nextBoolean(); }
     public TableDataBoolean() { data = rnd.nextBoolean(); }
     public String toString() { return Boolean.toString(data); }
     public TableDataBoolean clone() {
@@ -101,45 +106,11 @@ class TableHeader
     }
     public String toString() { return type; }
     public TableData kopia() {
-        return this.prototype.clone();
+        TableData klon = this.prototype.clone();
+        klon.losuj();
+        return klon;
     }
 }
-
-//class TableHeaderInt extends TableHeader {
-//    private TableDataInt prototype;
-//    public TableHeaderInt() {
-//        super("INT");
-//        prototype = new TableDataInt();
-//    }
-//    public TableDataInt kopia() { return prototype.clone(); }
-//}
-//
-//class TableHeaderDouble extends TableHeader {
-//    private TableDataDouble prototype;
-//    public TableHeaderDouble() {
-//        super("DOUBLE");
-//        prototype = new TableDataDouble();
-//    }
-//    public TableDataDouble kopia() { return prototype.clone(); }
-//}
-//
-//class TableHeaderChar extends TableHeader {
-//    private TableDataChar prototype;
-//    public TableHeaderChar() {
-//        super("CHAR");
-//        prototype = new TableDataChar();
-//    }
-//    public TableDataChar kopia() { return prototype.clone(); }
-//}
-//
-//class TableHeaderBoolean extends TableHeader {
-//    private TableDataBoolean prototype;
-//    public TableHeaderBoolean() {
-//        super("BOOLEAN");
-//        prototype = new TableDataBoolean();
-//    }
-//    public TableDataBoolean kopia() { return prototype.clone(); }
-//}
 
 public class Main {
     public static void main(String[] args) {
