@@ -1,0 +1,19 @@
+
+Z
+*app/src/main/java/pl/edu/pb/todo/Task.java,8/9/890fdf8bfe81d0c7a77ad2dd0e9232db3de5914f
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+a
+1app/src/main/java/pl/edu/pb/todo/TaskStorage.java,1/f/1f0e717a2c4017959a207dd9d4910f1562429fc7
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+l
+<app/src/main/java/pl/edu/pb/todo/SingleFragmentActivity.java,1/4/1468d3e0cf701ec80bd5f5320af9c908232cb828
+b
+2app/src/main/java/pl/edu/pb/todo/MainActivity.java,0/0/006cefceaefd5305503b6dbf2ff985ea797acb16
+f
+6app/src/main/java/pl/edu/pb/todo/TaskListFragment.java,f/6/f6fb9a6c384f515f13bfd7edf3ce4d21986f1391
+f
+6app/src/main/java/pl/edu/pb/todo/TaskListActivity.java,6/9/697370bc51c16abf7e7b3d9bf760022735066d35
+b
+2app/src/main/java/pl/edu/pb/todo/TaskFragment.java,1/9/19794a686a2324947e581cd69c1f7b08a47331d6
