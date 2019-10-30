@@ -1,0 +1,135 @@
+//////////////zadanie1
+console.log("ZADANIE 1")
+var string = "bardzodluginapis";
+string=string.split("");
+var countchars = string.reduce(function (chars, char) { 
+  if (char in chars) {
+    chars[char]++;
+  }
+  else {
+    chars[char] = 1;
+  }
+  return chars;
+}, {});
+console.log(countchars)
+
+
+////////////////zadanie2
+console.log("ZADANIE 2")
+function filtr_co_drugi(item,index)
+{
+   if(index%2==0)return item;
+}
+
+let tablica=[2,5,7,8,9,3,5,6,8,6,1,5,2,2,9];
+
+tablica=tablica.filter(filtr_co_drugi);
+
+let tablica2=tablica.map(function(x){
+  return (x=(x-Math.min(...tablica))/
+    (Math.max(...tablica)-Math.min(...tablica))).toFixed(2);
+})
+console.log(tablica2);
+
+
+/////////////////zadanie3
+console.log("ZADANIE 3")
+
+function reduce_multiply(last,curr)
+{
+  return last*curr;
+}
+
+let table = [...Array(7)].map(x=>Math.ceil(Math.random() * 10))
+console.log(table)
+
+console.log(table.reduce(reduce_multiply));
+/////////////////zadanie4
+console.log("ZADANIE 4")
+
+class Person{
+  constructor()
+  {
+    this.salary=0;
+  }   
+  wypisz()
+  {
+    console.log("konto: "+this.salary);
+  }
+}
+class PersonWp extends Person
+  {
+    constructor(){
+      super();
+    }
+    wplac(salary){
+      this.salary=salary+this.salary;
+    }
+  }
+class PersonWy extends Person
+  {
+    constructor(){
+      super();
+    }
+    wyplac(salary)
+    {
+      this.salary=this.salary-salary;
+    }
+  }
+class PersonWpy extends Person
+  {
+    constructor(){
+      super();
+    }
+    wplac(salary){
+      this.salary=salary+this.salary;
+    }
+    wyplac(salary)
+    {
+      this.salary=this.salary-salary;
+    }
+    
+  }
+
+
+
+function zadanie4(number1,number2,number3){
+  let konta = new Array(number1+number2+number3).fill(0);
+  konta=konta.map(fillwithkonta)
+  konta.forEach(operacjakonta)
+  console.log(konta);
+  konta.forEach(wypisanie)
+  function fillwithkonta(element,index,array)
+  {
+    if(index<number1)
+      {
+        
+        return new PersonWp()
+      }
+    if(index<(number1+number2))
+      {
+        
+        return new PersonWy()
+      }
+    else return new PersonWpy()
+  }
+  function operacjakonta(element)
+  {
+    if(element.wplac)
+      {
+        element.wplac(50);
+        
+      }
+    if(element.wyplac)
+      {
+        element.wyplac(20);
+      }
+  }
+  function wypisanie(element)
+  {
+    element.wypisz();
+  }
+  
+  
+}
+zadanie4(3,3,3);
