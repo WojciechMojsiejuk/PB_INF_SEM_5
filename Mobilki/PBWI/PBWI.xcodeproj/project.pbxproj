@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7076EFA23674A4E007DA869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7076EF923674A4E007DA869 /* main.m */; };
+		B7076F0223674CA6007DA869 /* PBWIBiurko.m in Sources */ = {isa = PBXBuildFile; fileRef = B7076F0123674CA6007DA869 /* PBWIBiurko.m */; };
+		B7076F0523674D12007DA869 /* PBWIKrzeslo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7076F0423674D12007DA869 /* PBWIKrzeslo.m */; };
+		B7076F0823674D24007DA869 /* PBWIPokoj.m in Sources */ = {isa = PBXBuildFile; fileRef = B7076F0723674D24007DA869 /* PBWIPokoj.m */; };
+		B7076F0B23674D59007DA869 /* PBWIZasob.m in Sources */ = {isa = PBXBuildFile; fileRef = B7076F0A23674D59007DA869 /* PBWIZasob.m */; };
+		B7076F0E23675298007DA869 /* PBWIZasobyWydzialu.m in Sources */ = {isa = PBXBuildFile; fileRef = B7076F0D23675298007DA869 /* PBWIZasobyWydzialu.m */; };
+		B7416FBA236E2881004BC8A9 /* PBWIKomputer.m in Sources */ = {isa = PBXBuildFile; fileRef = B7416FB9236E2881004BC8A9 /* PBWIKomputer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7076EF423674A4E007DA869 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B7076EF623674A4E007DA869 /* PBWI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PBWI; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7076EF923674A4E007DA869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7076F0023674CA6007DA869 /* PBWIBiurko.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIBiurko.h; sourceTree = "<group>"; };
+		B7076F0123674CA6007DA869 /* PBWIBiurko.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIBiurko.m; sourceTree = "<group>"; };
+		B7076F0323674D12007DA869 /* PBWIKrzeslo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIKrzeslo.h; sourceTree = "<group>"; };
+		B7076F0423674D12007DA869 /* PBWIKrzeslo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIKrzeslo.m; sourceTree = "<group>"; };
+		B7076F0623674D24007DA869 /* PBWIPokoj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIPokoj.h; sourceTree = "<group>"; };
+		B7076F0723674D24007DA869 /* PBWIPokoj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIPokoj.m; sourceTree = "<group>"; };
+		B7076F0923674D59007DA869 /* PBWIZasob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIZasob.h; sourceTree = "<group>"; };
+		B7076F0A23674D59007DA869 /* PBWIZasob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIZasob.m; sourceTree = "<group>"; };
+		B7076F0C23675298007DA869 /* PBWIZasobyWydzialu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIZasobyWydzialu.h; sourceTree = "<group>"; };
+		B7076F0D23675298007DA869 /* PBWIZasobyWydzialu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIZasobyWydzialu.m; sourceTree = "<group>"; };
+		B7416FB8236E2881004BC8A9 /* PBWIKomputer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIKomputer.h; sourceTree = "<group>"; };
+		B7416FB9236E2881004BC8A9 /* PBWIKomputer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIKomputer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7076EF323674A4E007DA869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7076EED23674A4E007DA869 = {
+			isa = PBXGroup;
+			children = (
+				B7076EF823674A4E007DA869 /* PBWI */,
+				B7076EF723674A4E007DA869 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7076EF723674A4E007DA869 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7076EF623674A4E007DA869 /* PBWI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7076EF823674A4E007DA869 /* PBWI */ = {
+			isa = PBXGroup;
+			children = (
+				B7076EF923674A4E007DA869 /* main.m */,
+				B7076F0023674CA6007DA869 /* PBWIBiurko.h */,
+				B7076F0123674CA6007DA869 /* PBWIBiurko.m */,
+				B7076F0323674D12007DA869 /* PBWIKrzeslo.h */,
+				B7076F0423674D12007DA869 /* PBWIKrzeslo.m */,
+				B7076F0623674D24007DA869 /* PBWIPokoj.h */,
+				B7076F0723674D24007DA869 /* PBWIPokoj.m */,
+				B7076F0923674D59007DA869 /* PBWIZasob.h */,
+				B7076F0A23674D59007DA869 /* PBWIZasob.m */,
+				B7076F0C23675298007DA869 /* PBWIZasobyWydzialu.h */,
+				B7076F0D23675298007DA869 /* PBWIZasobyWydzialu.m */,
+				B7416FB8236E2881004BC8A9 /* PBWIKomputer.h */,
+				B7416FB9236E2881004BC8A9 /* PBWIKomputer.m */,
+			);
+			path = PBWI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7076EF523674A4E007DA869 /* PBWI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7076EFD23674A4E007DA869 /* Build configuration list for PBXNativeTarget "PBWI" */;
+			buildPhases = (
+				B7076EF223674A4E007DA869 /* Sources */,
+				B7076EF323674A4E007DA869 /* Frameworks */,
+				B7076EF423674A4E007DA869 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PBWI;
+			productName = PBWI;
+			productReference = B7076EF623674A4E007DA869 /* PBWI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7076EEE23674A4E007DA869 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Paweł Bąk";
+				TargetAttributes = {
+					B7076EF523674A4E007DA869 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = B7076EF123674A4E007DA869 /* Build configuration list for PBXProject "PBWI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7076EED23674A4E007DA869;
+			productRefGroup = B7076EF723674A4E007DA869 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7076EF523674A4E007DA869 /* PBWI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7076EF223674A4E007DA869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7076EFA23674A4E007DA869 /* main.m in Sources */,
+				B7076F0523674D12007DA869 /* PBWIKrzeslo.m in Sources */,
+				B7076F0E23675298007DA869 /* PBWIZasobyWydzialu.m in Sources */,
+				B7076F0223674CA6007DA869 /* PBWIBiurko.m in Sources */,
+				B7076F0B23674D59007DA869 /* PBWIZasob.m in Sources */,
+				B7416FBA236E2881004BC8A9 /* PBWIKomputer.m in Sources */,
+				B7076F0823674D24007DA869 /* PBWIPokoj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7076EFB23674A4E007DA869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7076EFC23674A4E007DA869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B7076EFE23674A4E007DA869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7076EFF23674A4E007DA869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7076EF123674A4E007DA869 /* Build configuration list for PBXProject "PBWI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7076EFB23674A4E007DA869 /* Debug */,
+				B7076EFC23674A4E007DA869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7076EFD23674A4E007DA869 /* Build configuration list for PBXNativeTarget "PBWI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7076EFE23674A4E007DA869 /* Debug */,
+				B7076EFF23674A4E007DA869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7076EEE23674A4E007DA869 /* Project object */;
+}
