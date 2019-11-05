@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1059b56f-b1b0-4e9f-936d-d14b95ef0906" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SEHO6WAhOPUXCpm4xMDs3VowFC" />
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AssertJ.assertCustomTest">
+    <configuration name="AssertJ.assertCustomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="impreza_u_starego" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="impreska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="impreska" />
+      <option name="MAIN_CLASS_NAME" value="impreska.AssertJ" />
+      <option name="METHOD_NAME" value="assertCustomTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertJ.basicEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="impreza_u_starego" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="impreska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="impreska" />
+      <option name="MAIN_CLASS_NAME" value="impreska.AssertJ" />
+      <option name="METHOD_NAME" value="basicEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImpreskaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="impreza_u_starego" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="impreska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="impreska" />
+      <option name="MAIN_CLASS_NAME" value="impreska.ImpreskaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="impreza_u_starego" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="impreska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="impreska" />
+      <option name="MAIN_CLASS_NAME" value="impreska.StaryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaryTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="impreza_u_starego" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="impreska.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="impreska" />
+      <option name="MAIN_CLASS_NAME" value="impreska.StaryTest" />
+      <option name="METHOD_NAME" value="exceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.StaryTest" />
+      <item itemvalue="JUnit.StaryTest.exceptionTest" />
+      <item itemvalue="JUnit.ImpreskaTest" />
+      <item itemvalue="JUnit.AssertJ.basicEquals" />
+      <item itemvalue="JUnit.AssertJ.assertCustomTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AssertJ.assertCustomTest" />
+        <item itemvalue="JUnit.AssertJ.basicEquals" />
+        <item itemvalue="JUnit.ImpreskaTest" />
+        <item itemvalue="JUnit.StaryTest.exceptionTest" />
+        <item itemvalue="JUnit.StaryTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1059b56f-b1b0-4e9f-936d-d14b95ef0906" name="Default Changelist" comment="" />
+      <created>1571121802302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571121802302</updated>
+    </task>
+    <servers />
+  </component>
+</project>
