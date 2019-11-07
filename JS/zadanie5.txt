@@ -1,0 +1,113 @@
+const kolors=["red","blue","purple","yellow","brown","black"];
+//zadanie1
+function kolory(p){ 
+      rnd=Math.floor(Math.random() * ((kolors.length-1) - 0 + 1)) + 0;
+      p.style.color=kolors[rnd];
+  
+}
+var paragrafy=document.getElementsByTagName("p");  
+for(var p of paragrafy)
+  {
+    kolory(p)
+    znaki(p)
+  }
+//zadanie2
+function znaki(p)
+{  
+  var temp;
+           
+        temp=p.innerHTML.length;
+        p.title=temp;             
+}
+let headers = document.getElementsByTagName("h3");
+let pps = document.getElementsByTagName("p");
+//zadanie3
+function zadanie3(element)
+{
+  for(var i=0;i<pps.length;i++)
+    {
+      pps[i].style.border="none";
+      pps[i].style.backgroundColor="transparent";
+      if(pps[i]===element)index=i;
+    }
+  element.style.border="solid 4px green";
+  if(index%2==0)element.style.backgroundColor="darkgray"; 
+  else element.style.backgroundColor="lightgray"; 
+      if(index>0&&index<pps.length-1){          
+            pps[index-1].style.border="solid 4px orange";                
+            pps[index+1].style.border="solid 4px blue";                             
+      }
+       if(index==pps.length-1)
+         {
+           pps[index-1].style.border="solid 4px orange"; 
+         }
+       if(index==0)
+         {
+           
+           pps[index+1].style.border="solid 4px blue"; 
+         }
+  //mozliwość zastosowania switcha dla poprawienia szybkości
+    }
+
+
+//zadanie5
+function zadanie4(element)
+{
+  
+  element=element.nextElementSibling;
+
+  if(element.style.display=="none")
+    element.style.display="block";
+  else element.style.display="none";
+}
+
+//zadanie6
+function zadanie6(element)
+{
+  let hes = document.getElementsByTagName("h3");
+  let pars = document.getElementsByTagName("p");
+  var t;
+  
+  var head = document.createElement("h3");
+  head.innerHTML="header"+(hes.length+1)
+  
+  var att = document.createAttribute("onclick")
+  att.value="zadanie4(this)";
+  head.setAttributeNode(att)
+  var temp=pars[pars.length-1]
+  temp.parentNode.insertBefore(head,temp.nextSibling)
+  
+  var para = document.createElement("p");
+  para.innerHTML =document.getElementById("id").value
+  
+  
+  att=document.createAttribute("onclick")
+  att.value="zadanie3(this)"
+  para.setAttributeNode(att)
+  att=document.createAttribute("title")
+  att.value=""
+  para.setAttributeNode(att)
+  temp=head
+  temp.parentNode.insertBefore(para,temp.nextSibling)
+  kolory(para);
+  znaki(para);
+  
+}
+
+//////////////////
+<form>
+<input type="text" id="id">
+<input type="button" value="submit" onclick="zadanie6()">
+</form>
+
+<h3 onclick=zadanie4(this)>header1</h3>
+<p title="" class="pe" onclick="zadanie3(this)">tekst</p>
+<h3 onclick="zadanie4(this)">header2</h3>
+<p title="" class="pe" onclick=zadanie3(this)>tekst</p>
+<h3 onclick="zadanie4(this)">header3</h3>
+<p title="" class="pe" onclick=zadanie3(this)>tekst</p>
+<h3 onclick="zadanie4(this)">header4</h3>
+<p title="" class="pe" onclick=zadanie3(this)>tekst</p>
+<h3 onclick="zadanie4(this)">header5</h3>
+<p title="" class="pe" onclick=zadanie3(this)>tekst</p>
+
