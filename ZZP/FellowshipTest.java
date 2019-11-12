@@ -101,6 +101,32 @@ class FellowshipTest implements WithAssertions {
     }
 
     @Test
+    public void BorominJestPomiedzyAragornemALegolasem()
+    {
+        Fellowship fellowship = new Fellowship();
+        List<Creature> members =  fellowship.getMembers();
+        Creature Aragorn = null;
+        Creature Boromir = null;
+        Creature Legolas = null;
+        for(int i = 0; i<members.size(); i++)
+        {
+            if(members.get(i).getName() == "Aragorn")
+            {
+               Aragorn = members.get(i);
+            }
+            if(members.get(i).getName() == "Boromir")
+            {
+                Boromir = members.get(i);
+            }
+            if(members.get(i).getName() == "Legolas")
+            {
+               Legolas = members.get(i);
+            }
+        }
+        assertThat(members).containsSequence(Aragorn, Boromir, Legolas);
+    }
+
+    @Test
     public void SarumanJestValarem()
     {
         Saruman saruman = new Saruman();
