@@ -1,8 +1,6 @@
 
-Xsquid:S2209 "5Change this instance-reference to a static reference.(„••òúÿÿÿÿ8½Ìç à-
-|squid:S1450"YRemove the "dateButton" field and declare it as a local variable in the relevant methods.(ˆŸªùùÿÿÿÿ8æ»à-
-{squid:S1450"XRemove the "nameField" field and declare it as a local variable in the relevant methods.(âê¸şÿÿÿÿ8›‚’˜à-
-Ÿsquid:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±¾ê8»Û’˜à-
-Ÿsquid:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±8ºÛ’˜à-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–ÑÄ±ÿÿÿÿÿ8…‡Çôà-
 ~squid:S1450"[Remove the "doneCheckBox" field and declare it as a local variable in the relevant methods.(§¨âŸıÿÿÿÿ8æ»à-
+Ÿsquid:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±8ºÛ’˜à-
+Ÿsquid:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±¾ê8»Û’˜à-
+{squid:S1450"XRemove the "nameField" field and declare it as a local variable in the relevant methods.(âê¸şÿÿÿÿ8›‚’˜à-
+|squid:S1450"YRemove the "dateButton" field and declare it as a local variable in the relevant methods.(ˆŸªùùÿÿÿÿ8æ»à-

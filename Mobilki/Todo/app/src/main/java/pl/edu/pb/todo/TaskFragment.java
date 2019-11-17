@@ -67,6 +67,7 @@ public class TaskFragment extends Fragment {
                 task.setDone(isChecked);
             }
         });
+        view.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
         return view;
     }
 

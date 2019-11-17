@@ -9,6 +9,15 @@ public class TaskStorage {
     private static final TaskStorage ourInstance = new TaskStorage();
     private List<Task> tasks;
 
+    private TaskStorage() {
+        tasks = new ArrayList<>();
+        for (int i = 0; i < 100; i++) { tasks.add(new Task("Task " + Integer.toString(i))); }
+    }
+
+    public static TaskStorage getInstance() {
+        return ourInstance;
+    }
+
     public List<Task> getTasks() { return tasks; }
     public Task getTask(UUID id) {
         Task result = null;
@@ -18,12 +27,7 @@ public class TaskStorage {
         return result;
     }
 
-    public static TaskStorage getInstance() {
-        return ourInstance;
-    }
-
-    private TaskStorage() {
-        tasks = new ArrayList<>();
-        for (int i = 0; i < 100; i++) { tasks.add(new Task("Zadanie " + Integer.toString(i))); }
+    public void addTask(Task task) {
+        tasks.add(task);
     }
 }

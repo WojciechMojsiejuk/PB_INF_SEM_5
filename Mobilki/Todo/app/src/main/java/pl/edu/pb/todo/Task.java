@@ -15,6 +15,13 @@ public class Task {
     private Date date;
     private boolean done;
 
+    public Task () {
+        id = UUID.randomUUID();
+        date = new Date();
+        name = "";
+        done = false;
+    }
+
     public Task (String name) {
         id = UUID.randomUUID();
         date = new Date();
