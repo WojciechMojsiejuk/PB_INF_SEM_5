@@ -46,7 +46,15 @@ int main()
             NSLog([chair opisZasobu]);
         }
         NSLog([[resources returnRoomNumbers] description]);
-        [resources addToRoom:@"101" :komputer];
+//        [resources addToRoom:@"101" :komputer];
+        [resources moveToRoom:@"211" :@"101" :krzeslo];
+        for (PBWIZasob * zasob in [pokoj pobierzWszystkieZasoby]) {
+            NSLog([zasob pobierzOpisZasobu]);
+        }
+        for (PBWIZasob * zasob in [pokoj1 pobierzWszystkieZasoby]) {
+            NSLog([zasob pobierzOpisZasobu]);
+        }
+        
     }
     return 0;
 }

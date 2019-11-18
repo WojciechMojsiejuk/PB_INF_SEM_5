@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e27c57ae-3b24-45da-b676-468cefad6ebd" name="Default Changelist" comment="" />
+    <list default="true" id="8a802617-3e27-4c3f-92cb-373a2c33d2f8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1TEkWW6cwrdG9nzTfaCiCKyZyNH" />
+  <component name="ProjectId" id="1TYYZfzap7BnHxG41pdfLGwAF1e" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -26,42 +26,37 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Chessboard" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="pl.wipb.ztp.chess.Chessboard" />
-      <module name="05 decorator" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <module name="06 flyweight" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="pl.wipb.ztp.chess.Chessboard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e27c57ae-3b24-45da-b676-468cefad6ebd" name="Default Changelist" comment="" />
-      <created>1573032673389</created>
+      <changelist id="8a802617-3e27-4c3f-92cb-373a2c33d2f8" name="Default Changelist" comment="" />
+      <created>1573638552208</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573032673389</updated>
-      <workItem from="1573032674913" duration="251000" />
-      <workItem from="1573033299256" duration="3699000" />
-      <workItem from="1573403941417" duration="5153000" />
-      <workItem from="1573576108571" duration="49000" />
-      <workItem from="1573576183840" duration="2000" />
-      <workItem from="1573637042655" duration="745000" />
-      <workItem from="1573638205349" duration="5000" />
-      <workItem from="1573638496850" duration="20000" />
-      <workItem from="1573638828077" duration="2000" />
-      <workItem from="1573638834286" duration="1000" />
-      <workItem from="1573638883930" duration="13000" />
+      <updated>1573638552208</updated>
+      <workItem from="1573638553462" duration="241000" />
+      <workItem from="1573638837209" duration="44000" />
+      <workItem from="1573638899592" duration="3852000" />
     </task>
     <servers />
   </component>
