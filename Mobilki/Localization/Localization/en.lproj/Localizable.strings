@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by Paweł Bąk on 18/11/2019.
+  Copyright © 2019 Paweł Bąk. All rights reserved.
+*/
+
+"Information"="Information";
+"The faculty is running %i programs on graduate and undergraduate level."=" The faculty is running %i programs on graduate and undergraduate level.";
+"image"="wi-en";

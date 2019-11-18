@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by Paweł Bąk on 18/11/2019.
+  Copyright © 2019 Paweł Bąk. All rights reserved.
+*/
+
+"Information"="Informacje";
+"The faculty is running %i programs on graduate and undergraduate level."="Wydział prowadzi %i kierunków magisterskich i inżynierskich.";
+"image"="wi-pl";
