@@ -115,15 +115,15 @@ class Receipt {
 
     validate(name, number, price) {
         if (!this.validateName(name)) {
-            alert("Name field is empty");
+            alert("Błędna nazwa");
             return false;
         }
         if (!this.validateIsFloat(number)) {
-            alert("Wrong type of input");
+            alert("Błędna ilość");
             return false;
         }
         if (!this.validateIsFloat(price)) {
-            alert("Wrong type of input");
+            alert("Błędna cena");
             return false;
         }
         return true;
@@ -135,6 +135,10 @@ class Receipt {
             return false;
         }
         if (number.length == 0) {          
+            return false;
+        }
+        if (number < 0)
+        {
             return false;
         }
         return true;
@@ -155,8 +159,9 @@ class Receipt {
     calculateTotal() {
         this.total = 0;
         for (let record of this.table_of_records) {
-            this.total += parseFloat(record.total);
+            this.total += record.total;
         }
+        this.total = (Math.round(this.total * 100) / 100).toFixed(2);
     }
 
     update() {
@@ -222,24 +227,16 @@ class Receipt {
 class Record {
     constructor(name, number, price) {
         this.name = name;
-        this.number = parseFloat(number).toFixed(2);
-        this.price = parseFloat(price).toFixed(2);
-        this.total = parseFloat(this.calculateTotal()).toFixed(2);
+        this.number = Math.round(number * 100) / 100;
+        this.price = Math.round(price * 100) / 100;
+        this.total = Math.round(this.calculateTotal() * 100) / 100;
     }
 
     calculateTotal() {
         return this.number * this.price;
     }
-
-    overwrite(name, number, price) {
-        this.name = name;
-        this.number = number;
-        this.price = price;
-        this.total = this.calculateTotal()
-    }
 }
 
-// localStorage.clear();
 let receipt;
 
 if (localStorage.table === undefined) {
