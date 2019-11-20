@@ -17,9 +17,7 @@ class Receipt {
         let price = this.price_field.value;
         number = number.replace(",", ".");
         price = price.replace(",", ".");
-        let a = this.validateIsFloat(number);
-        let b = this.validateIsFloat(price);
-        if (a && b){
+        if (this.validate(name, number, price)) {
             let new_record = new Record(name, number, price);
             this.addToReceipt(new_record);
 
@@ -79,17 +77,18 @@ class Receipt {
 
     editRecordConfirmation(index) {
         let temp = this.table_tr[index+1];
-        let record = this.table_of_records[index];
-        record.name = temp.childNodes[1].childNodes[0].value;
-        if (!this.validateIsFloat(temp.childNodes[2].childNodes[0].value)) {
+        //let record = this.table_of_records[index];
+        let name = temp.childNodes[1].childNodes[0].value;
+        let number = temp.childNodes[2].childNodes[0].value;
+        let price = temp.childNodes[3].childNodes[0].value;
+        if (!this.validate(name, number, price)) {
             this.editRecord(index);
         }
-        record.number = temp.childNodes[2].childNodes[0].value;
-        if (!this.validateIsFloat(temp.childNodes[3].childNodes[0].value)) {
-            this.editRecord(index);
-        }
-        record.price = temp.childNodes[3].childNodes[0].value;
-        record.total = record.number * record.price;
+        let record = new Record(name, number, price);
+        //record.name = name;
+        //record.number = number;
+        //record.price = price;
+        //record.total = number * price;
         this.table_of_records[index] = record;
 
         document.getElementById("input_name").disabled = false;
@@ -114,10 +113,35 @@ class Receipt {
         this.update();
     }
 
+    validate(name, number, price) {
+        if (!this.validateName(name)) {
+            alert("Name field is empty");
+            return false;
+        }
+        if (!this.validateIsFloat(number)) {
+            alert("Wrong type of input");
+            return false;
+        }
+        if (!this.validateIsFloat(price)) {
+            alert("Wrong type of input");
+            return false;
+        }
+        return true;
+    }
+
     validateIsFloat(number) {
         if (isNaN(number))
         {
-            alert("Must input numbers");
+            return false;
+        }
+        if (number.length == 0) {          
+            return false;
+        }
+        return true;
+    }
+
+    validateName(name) {
+        if (name.length == 0) {
             return false;
         }
         return true;
@@ -131,7 +155,7 @@ class Receipt {
     calculateTotal() {
         this.total = 0;
         for (let record of this.table_of_records) {
-            this.total += record.total;
+            this.total += parseFloat(record.total);
         }
     }
 
@@ -198,9 +222,9 @@ class Receipt {
 class Record {
     constructor(name, number, price) {
         this.name = name;
-        this.number = number;
-        this.price = price;
-        this.total = this.calculateTotal()
+        this.number = parseFloat(number).toFixed(2);
+        this.price = parseFloat(price).toFixed(2);
+        this.total = parseFloat(this.calculateTotal()).toFixed(2);
     }
 
     calculateTotal() {
