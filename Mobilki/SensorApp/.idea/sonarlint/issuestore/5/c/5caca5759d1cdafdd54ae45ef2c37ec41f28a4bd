@@ -1,0 +1,5 @@
+
+zsquid:S1450"\Remove the "sensorManager" field and declare it as a local variable in the relevant methods.(Ş¬–„8²ïæ›ê-
+~squid:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ıÿÿÿÿ8ø­å›ê-
+nsquid:S1301I"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¹®€Ÿê-
+squid:S00116 "[Rename this field "subtitle_visible" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÈ•‘úÿÿÿÿ8’‘Ÿê-
