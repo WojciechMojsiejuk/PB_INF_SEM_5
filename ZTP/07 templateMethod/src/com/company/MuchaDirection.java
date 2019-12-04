@@ -13,7 +13,7 @@ public class MuchaDirection extends Mucha{
     public Color getColor() {
         return color;
     }
-    public void move() {
+    public void calculatePosition() {
         double angle = Math.random() * Math.PI / 10 - (Math.PI / 20);
         double temp = Math.cos(angle) * vx - Math.sin(angle) * vy;
         vy = Math.sin(angle) * vx + Math.cos(angle) * vy;

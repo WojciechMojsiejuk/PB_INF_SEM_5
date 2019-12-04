@@ -22,6 +22,10 @@ public abstract class Mucha {
         g.fillOval(a, b, 5, 5);
     }
 
-    protected abstract void move();
+    public void move(){
+        calculatePosition();
+    }
+
+    protected abstract void calculatePosition();
     protected abstract Color getColor();
 }

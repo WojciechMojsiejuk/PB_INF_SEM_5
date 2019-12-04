@@ -18,7 +18,7 @@ class MuchaCircle extends Mucha{
     public Color getColor() {
         return color;
     }
-    public void move() {
+    public void calculatePosition() {
         double angle = Math.PI * 0.02;
         if (!clockwise)
             angle = -angle;

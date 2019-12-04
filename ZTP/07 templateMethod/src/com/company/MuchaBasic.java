@@ -14,7 +14,7 @@ class MuchaBasic extends Mucha {
         return color;
     }
 
-    public void move() {
+    public void calculatePosition() {
         x += vx;
         y += vy;
         if(x<0) { x = -x;  vx = -vx; }
