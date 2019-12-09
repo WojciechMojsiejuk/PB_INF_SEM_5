@@ -105,37 +105,59 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private class BookHolder extends RecyclerView.ViewHolder {
+    private class BookHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
         private TextView bookTitleTextView;
         private TextView bookAuthorTextView;
+        private Book book;
 
         public BookHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.book_list_item, parent, false));
+            itemView.setOnClickListener(this);
+            itemView.setOnLongClickListener(this);
 
             bookTitleTextView = itemView.findViewById(R.id.book_title);
             bookAuthorTextView = itemView.findViewById(R.id.book_author);
         }
 
         public void bind(Book book) {
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    editBook = book;
-                    Intent intent = new Intent(MainActivity.this, EditBookActivity.class);
-                    intent.putExtra(EditBookActivity.EXTRA_EDIT_BOOK_TITLE, book.getTitle());
-                    intent.putExtra(EditBookActivity.EXTRA_EDIT_BOOK_AUTHOR, book.getAuthor());
-                    startActivityForResult(intent, EDIT_BOOK_ACTIVITY_REQUEST_CODE);
-                }
-            });
-            itemView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    bookViewModel.delete(book);
-                    return true;
-                }
-            });
+
+//            Alterantive to implementing OnClick iterfaces ans methods
+
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    editBook = book;
+//                    Intent intent = new Intent(MainActivity.this, EditBookActivity.class);
+//                    intent.putExtra(EditBookActivity.EXTRA_EDIT_BOOK_TITLE, book.getTitle());
+//                    intent.putExtra(EditBookActivity.EXTRA_EDIT_BOOK_AUTHOR, book.getAuthor());
+//                    startActivityForResult(intent, EDIT_BOOK_ACTIVITY_REQUEST_CODE);
+//                }
+//            });
+//            itemView.setOnLongClickListener(new View.OnLongClickListener() {
+//                @Override
+//                public boolean onLongClick(View v) {
+//                    bookViewModel.delete(book);
+//                    return true;
+//                }
+//            });
+            this.book = book;
             bookTitleTextView.setText(book.getTitle());
             bookAuthorTextView.setText(book.getAuthor());
+        }
+
+        @Override
+        public void onClick(View v) {
+            editBook = book;
+            Intent intent = new Intent(MainActivity.this, EditBookActivity.class);
+            intent.putExtra(EditBookActivity.EXTRA_EDIT_BOOK_TITLE, book.getTitle());
+            intent.putExtra(EditBookActivity.EXTRA_EDIT_BOOK_AUTHOR, book.getAuthor());
+            startActivityForResult(intent, EDIT_BOOK_ACTIVITY_REQUEST_CODE);
+        }
+
+        @Override
+        public boolean onLongClick(View v) {
+            bookViewModel.delete(book);
+            return true;
         }
     }
 
