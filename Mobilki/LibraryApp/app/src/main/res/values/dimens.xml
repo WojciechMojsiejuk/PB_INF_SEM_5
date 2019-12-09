@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_item_padding">5dp</dimen>
+    <dimen name="list_item_height">40dp</dimen>
+    <dimen name="recyclerview_width">0dp</dimen>
+    <dimen name="recyclerview_height">0dp</dimen>
+    <dimen name="add_button_margin">16dp</dimen>
+    <dimen name="small_padding">6dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+</resources>
