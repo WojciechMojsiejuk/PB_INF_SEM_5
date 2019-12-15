@@ -318,3 +318,17 @@ insert into promotion  values ('FREE SHIPPING', 56.01, 999.99);
 
 Commit;
 
+-- 4. Napisać w PL/SQL skrypty do wypełniania wszystkich tabel (oprócz kopii) danymi (100 000 rekordów). Użyć automatycznej inkrementacji wartości do wypełniania kolumn z kluczem podstawowym.
+
+DECLARE 
+l_loops NUMBER(6) := 100000;
+l_data VARCHAR2(150);
+l_start NUMBER;
+BEGIN
+EXECUTE IMMEDIATE 'TRUNCATE TABLE Author';
+l_start := SYS.dbms_utility.get_time;
+FOR i IN 1 .. l_loops LOOP
+INSERT INTO Author(AuthorID, Lname, Fname) VALUES (i, 'Surname ' || i, 'Name ' || i);
+END LOOP;
+DBMS_OUTPUT.put_line('Insert time : ' || (DBMS_UTILITY.get_time - l_start));
+END;
