@@ -4,6 +4,8 @@ SELECT * FROM Books WHERE ISBN IN (SELECT ISBN FROM Bookauthor WHERE AuthorID IN
 --2. Utworzyd indeksy jednopolowe B-tree (dla kolumn z mocno zróżnicowanymi danymi) lub Bitmapowe (dla mało zróżnicowanych danychw kolumnie) na tych kolumnach które występują w zapytaniu z zadania 1 jako warunek w filtracji wierszy. Dokonad pomiaru czasu wykonywania operacji wybierania danych analogicznym zapytaniem jak w zadaniu 1.
 CREATE INDEX author_index ON Author(Fname);
 DROP INDEX author_index;
+CREATE INDEX author_upper_index ON Author (UPPER(Fname));
+DROP INDEX author_upper_index;
 -- nie da sie utworzyc
 CREATE BITMAP INDEX author_bitmap_indeksu ON Author(Fname);
 DROP INDEX author_bitmap_index;
