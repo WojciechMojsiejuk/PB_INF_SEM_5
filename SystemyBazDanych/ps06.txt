@@ -1,0 +1,17 @@
+-- 1. W bloku PL/SQL dokonad pomiaru czasu wykonywania operacji wybierania danych z trzech wybranych tabel przy narzuconych warunkach na rekordy.
+-- time: 0.021(s)
+SELECT * FROM Books WHERE ISBN IN (SELECT ISBN FROM Bookauthor WHERE AuthorID IN (SELECT AuthorID FROM Author WHERE Fname LIKE '_%_%_A'));
+--2. Utworzyd indeksy jednopolowe B-tree (dla kolumn z mocno zróżnicowanymi danymi) lub Bitmapowe (dla mało zróżnicowanych danychw kolumnie) na tych kolumnach które występują w zapytaniu z zadania 1 jako warunek w filtracji wierszy. Dokonad pomiaru czasu wykonywania operacji wybierania danych analogicznym zapytaniem jak w zadaniu 1.
+CREATE INDEX author_index ON Author(Fname);
+DROP INDEX author_index;
+-- nie da sie utworzyc
+CREATE BITMAP INDEX author_bitmap_indeksu ON Author(Fname);
+DROP INDEX author_bitmap_index;
+--3. W bloku PL/SQL dokonad pomiaru czasu wykonywania operacji wybierania danych z pięciu wybranych tabel (innych niż poprzednio) przy narzuconych warunkach na rekordy.
+SELECT * FROM Publisher WHERE PHONE LIKE '%-%-%' AND PubID IN (SELECT PubID FROM BOOKS WHERE TITLE LIKE '_%_' AND ISBN IN (SELECT ISBN FROM Orderitems WHERE Order# IN(SELECT Order# FROM ORDERS WHERE Customer# IN (SELECT Customer# FROM Customers WHERE firstname LIKE '_%I%_'))));
+-- 4. Założyd indeks na klucze obce dla tabel wykorzystywanych w zadaniu 3:
+CREATE INDEX publisher_fk_books_index ON Books(PubID);
+DROP INDEX publisher_fk_books_index;
+CREATE INDEX isbn_fk_orderitems_index ON Orderitems(ISBN);
+DROP INDEX isbn_fk_orderitems_index;
+--CREATE INDEX order_fk_customer_index ON Customers(Order#);
