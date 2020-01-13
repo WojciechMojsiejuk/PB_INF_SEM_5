@@ -1,0 +1,10 @@
+
+Ysquid:S2696Y"6Make the enclosing method "static" or remove this set.(Á’÷ıÿÿÿÿ8Éé³Ûø-
+Xsquid:S2209Y"5Change this instance-reference to a static reference.(Á’÷ıÿÿÿÿ8Éé³Ûø-
+qsquid:ModifiersOrderCheck "EReorder the modifiers to comply with the Java Language Specification.(ğ•€é8„Í˜Ûø-
+…squid:S3252M"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(½ÑÕ²8Ÿ©ò›õ-
+Asquid:S3398`"#Move this method into "BookHolder".(¥”à„8Éé³Ûø-
+Isquid:S1444 "+Make this "public static books" field final(ğ•€é8„Í˜Ûø-
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±8„ù”šõ-
+Csquid:S2386Y" Make member "books" "protected".(Á’÷ıÿÿÿÿ8Éé³Ûø-
+†"squid:ClassVariableVisibilityCheck "QMake books a static final constant or non-public and provide accessors if needed.(ğ•€é8š·Ûø-

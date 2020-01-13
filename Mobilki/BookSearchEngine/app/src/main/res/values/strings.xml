@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookSearchEngine</string>
+    <string name="book_title">Title</string>
+    <string name="book_authors">Authors</string>
+    <string name="book_subjects">Subjects</string>
+    <string name="book_publish_year">Publish year</string>
+    <string name="book_languages">Languages available</string>
+    <string name="empty">Empty</string>
+</resources>

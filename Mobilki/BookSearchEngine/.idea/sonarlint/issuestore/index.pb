@@ -1,0 +1,21 @@
+
+n
+>app/src/main/java/pl/edu/pb/booksearchengine/MainActivity.java,1/f/1f2905444178e849c698fffd8725f6ffeb6b7fe6
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+f
+6app/src/main/java/pl/edu/pb/booksearchengine/Book.java,e/9/e979be94eee453d0ad2568fa8c8417618a8a1706
+o
+?app/src/main/java/pl/edu/pb/booksearchengine/BookContainer.java,e/d/edb4edde2d6dc56124ce0e00be3f992fddd50ca0
+r
+Bapp/src/main/java/pl/edu/pb/booksearchengine/RetrofitInstance.java,1/1/1146802f382dd40ee8e07f7cfe2779883cd4c588
+m
+=app/src/main/java/pl/edu/pb/booksearchengine/BookService.java,c/2/c2f6c4ec1fc35675717915bfaf7e87e247cf3e40
+u
+Eapp/src/main/java/pl/edu/pb/booksearchengine/BookDetailsActivity.java,3/2/3236cca51eea6c5683eef8d560afc39f420afc88
+v
+Fapp/src/main/java/pl/edu/pb/booksearchengine/BookDetailsContainer.java,7/7/775822cad1aad807f1d77f8e1c619f3f9243fe86
+m
+=app/src/main/java/pl/edu/pb/booksearchengine/BookDetails.java,a/e/aefee2e81b313e1001782b68a7d6112c49a54467

@@ -1,15 +1,15 @@
 
-nsquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(›¢¼Äüÿÿÿÿ8¥ŞøÔî-
-nsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(Ù÷ñùÿÿÿÿ8¥ŞøÔî-
 nsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(™ÕÃ¼şÿÿÿÿ8¥ŞøÔî-
-jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(®ƒ÷8Êó€İî-
 qsquid:UselessImportCheck"ARemove this unused import 'androidx.lifecycle.ViewModelProvider'.(ª´÷©øÿÿÿÿ8Äªı¼î-
-nsquid:CommentedOutCodeLine~"<This block of commented-out lines of code should be removed.(ÛŠšÕşÿÿÿÿ8Êó€İî-
-isquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ÿ—Ò¼8¥ŞøÔî-
-nsquid:UselessImportCheck">Remove this unused import 'androidx.appcompat.widget.Toolbar'.(ÔËûİùÿÿÿÿ8ïÕí½î-
-esquid:S2259`"BA "NullPointerException" could be thrown; "data" is nullable here.(ëó÷÷úÿÿÿÿ8‚³ªÔî-
-isquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(³¿á•8¥ŞøÔî-
 isquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(îŸ¬ª8¥ŞøÔî-
-esquid:S2259Z"BA "NullPointerException" could be thrown; "data" is nullable here.(”‘ôÕøÿÿÿÿ8ÄšÕ½î-
-osquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ÖÔ¾Áûÿÿÿÿ8Êó€İî-
+isquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(³¿á•8¥ŞøÔî-
+esquid:S2259`"BA "NullPointerException" could be thrown; "data" is nullable here.(ëó÷÷úÿÿÿÿ8‚³ªÔî-
 Ksquid:S1604."(Make this anonymous inner class a lambda(ÇÎáæşÿÿÿÿ8Äªı¼î-
+esquid:S2259Z"BA "NullPointerException" could be thrown; "data" is nullable here.(”‘ôÕøÿÿÿÿ8ÄšÕ½î-
+nsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(Ù÷ñùÿÿÿÿ8¥ŞøÔî-
+jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(®ƒ÷8Êó€İî-
+nsquid:UselessImportCheck">Remove this unused import 'androidx.appcompat.widget.Toolbar'.(ÔËûİùÿÿÿÿ8ïÕí½î-
+isquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ÿ—Ò¼8¥ŞøÔî-
+nsquid:CommentedOutCodeLine~"<This block of commented-out lines of code should be removed.(ÛŠšÕşÿÿÿÿ8Êó€İî-
+nsquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(›¢¼Äüÿÿÿÿ8¥ŞøÔî-
+osquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ÖÔ¾Áûÿÿÿÿ8Êó€İî-
